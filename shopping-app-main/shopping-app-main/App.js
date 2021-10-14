@@ -13,7 +13,7 @@ export default function App() {
   return (
     <View>
       <NavigationContainer>
-        <MainNavigator.Navigator>
+        <MainNavigator.Navigator screenOptions={{headerShown:false}} initialRouteName = "Login">
           <MainNavigator.Screen name = "Home" component = {Home} />
           <MainNavigator.Screen name = "Login" component = {Login} />
         </MainNavigator.Navigator>
